@@ -34,7 +34,12 @@ $(document).ready(function() {
   $('.lineUpButton').on('click', function(event) {
     window.dancers.forEach(function(dancer) {
       dancer.setPosition(500, dancer.left);
-      dancer.increment = 0;
+    });
+  });
+
+  $('.random').on('click', function(event) {
+    window.dancers.forEach(function(dancer) {
+      dancer.setPosition(Math.random() * $('body').height(), Math.random() * $('body').width(), this.timeBetweenSteps);
     });
   });
 });

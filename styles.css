@@ -3,7 +3,8 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image: url(/images/dancefloor.webp);
+  background-size: cover;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -37,4 +38,7 @@ img {
 }
 .wigglyDancer {
   border:10px solid green;
+}
+.sociallyDistantDancer {
+  border:10px solid black;
 }
