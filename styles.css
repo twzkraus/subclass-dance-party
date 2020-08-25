@@ -25,3 +25,16 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+img {
+  width: 50%;
+  height: 50%;
+}
+.blinkyDancer{
+  border:10px solid blue;
+}
+.bouncyDancer {
+  border:10px solid yellow;
+}
+.wigglyDancer {
+  border:10px solid green;
+}
