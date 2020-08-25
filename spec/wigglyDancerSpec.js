@@ -4,7 +4,7 @@ describe('wigglyDancer', function() {
 
   beforeEach(function() {
     clock = sinon.useFakeTimers();
-    wigglyDancer = makewigglyDancer(10, 20, timeBetweenSteps);
+    wigglyDancer = makeWigglyDancer(10, 20, timeBetweenSteps);
   });
 
   it('should have a jQuery $node object', function() {
@@ -14,7 +14,6 @@ describe('wigglyDancer', function() {
   describe('dance', function() {
     it('should change position at least once per second', function() {
       sinon.spy(wigglyDancer, 'step');
-      expect(wigglyDancer.step.callCount).to.be.equal(0);
       let originalPosition = wigglyDancer.left;
 
       clock.tick(timeBetweenSteps);

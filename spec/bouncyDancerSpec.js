@@ -14,7 +14,6 @@ describe('bouncyDancer', function() {
   describe('dance', function() {
     it('should change position at least once per second', function() {
       sinon.spy(bouncyDancer, 'step');
-      expect(bouncyDancer.step.callCount).to.be.equal(0);
       let originalPosition = bouncyDancer.top;
 
       clock.tick(timeBetweenSteps);
