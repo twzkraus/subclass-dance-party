@@ -42,5 +42,5 @@ $(document).ready(function() {
       dancer.setPosition(Math.random() * $('body').height(), Math.random() * $('body').width(), this.timeBetweenSteps);
     });
   });
-});
 
+});

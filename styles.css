@@ -3,7 +3,7 @@ body, html{
 }
 body{
   margin: 0px;
-  background-image: url(/images/dancefloor.webp);
+  /* background-image: url(/images/dancefloor.webp); */
   background-size: cover;
   font-size: 18px;
 }
@@ -22,7 +22,7 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
+  border:50px solid red;
   border-radius:10px;
   position:absolute;
 }
@@ -31,14 +31,14 @@ img {
   height: 50%;
 }
 .blinkyDancer{
-  border:10px solid blue;
+  border-color: blue;
 }
 .bouncyDancer {
-  border:10px solid yellow;
+  border-color: yellow;
 }
 .wigglyDancer {
-  border:10px solid green;
+  border-color: green;
 }
 .sociallyDistantDancer {
-  border:10px solid black;
+  border-color: black;
 }

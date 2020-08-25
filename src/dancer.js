@@ -18,6 +18,10 @@ var Dancer = function(top, left, timeBetweenSteps) {
 
   Dancer.prototype.step.call(this);
 
+  $('.dancer').mouseover(function() {
+    $('.dancer').css('border-width', '30px');
+  });
+
 };
 
 Dancer.prototype.step = function() {
@@ -27,10 +31,6 @@ Dancer.prototype.step = function() {
 };
 
 Dancer.prototype.setPosition = function(top, left) {
-  // bouncyDancer.top = 10;
-  // bouncyDancer.left = 20;
-  // top = 20;
-  // left = 40;
   // Use css top and left properties to position our <span> tag
   // where it belongs on the page. See http://api.jquery.com/css/
   //
