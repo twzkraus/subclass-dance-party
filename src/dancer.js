@@ -18,10 +18,6 @@ var Dancer = function(top, left, timeBetweenSteps) {
 
   Dancer.prototype.step.call(this);
 
-  $('.dancer').mouseover(function() {
-    $('.dancer').css('border-width', '30px');
-  });
-
 };
 
 Dancer.prototype.step = function() {

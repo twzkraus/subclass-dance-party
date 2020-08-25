@@ -7,6 +7,14 @@ var BouncyDancer = function(top, left, timeBetweenSteps) {
   this.$node.addClass('bouncyDancer');
   this.isUp = false;
   this.increment = Math.random() * 20;
+
+  $('.bouncyDancer').mouseover(function() {
+    $('.bouncyDancer').css('border-width', '30px');
+  });
+
+  $('.bouncyDancer').mouseout(function() {
+    $('.bouncyDancer').css('border-width', '50px');
+  });
 };
 
 BouncyDancer.prototype = Object.create(Dancer.prototype);
