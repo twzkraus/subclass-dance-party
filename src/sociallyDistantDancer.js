@@ -7,6 +7,7 @@ var SociallyDistantDancer = function(top, left, timeBetweenSteps) {
   this.$node.addClass('sociallyDistantDancer');
   this.isUp = false;
   this.increment = Math.random() * 20;
+  this.$node.prepend('<img class="dancerHead" src=/images/socially_distant.png />');
 };
 
 SociallyDistantDancer.prototype = Object.create(Dancer.prototype);

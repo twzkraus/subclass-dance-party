@@ -10,7 +10,13 @@ var Dancer = function(top, left, timeBetweenSteps) {
 
   // use jQuery to create an HTML <span> tag
   this.$node = $('<span class="dancer"></span>');
-  // this.$node.prepend('<img src="https://img.apmcdn.org/768cb350c59023919f564341090e3eea4970388c/normal/5034f3-20180309-rick-astley.jpg"/>');
+  this.$node.prepend('<img class="dancerBody" src=/images/stick_figure_body_white_background.png />');
+  this.$node.prepend('<br>');
+  let thisProtoProp = this.__proto__;
+  let isStatic = thisProtoProp !== BouncyDancer.prototype && thisProtoProp !== WigglyDancer.prototype && thisProtoProp !== BlinkyDancer.prototype && thisProtoProp !== SociallyDistantDancer.prototype;
+  if (isStatic) {
+    this.$node.prepend('<img class="dancerHead" src=/images/quinn.jpg />');
+  }
 
   // now that we have defined the dancer object, we can start setting up important parts of it by calling the methods we wrote
   // this one sets the position to some random default point within the body

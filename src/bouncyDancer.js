@@ -15,6 +15,7 @@ var BouncyDancer = function(top, left, timeBetweenSteps) {
   $('.bouncyDancer').mouseout(function() {
     $('.bouncyDancer').css('border-width', '50px');
   });
+  this.$node.prepend('<img class="dancerHead" src=/images/cody.jpg />');
 };
 
 BouncyDancer.prototype = Object.create(Dancer.prototype);

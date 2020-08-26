@@ -7,6 +7,7 @@ var WigglyDancer = function(top, left, timeBetweenSteps) {
   this.$node.addClass('wigglyDancer');
   this.isRight = false;
   this.increment = Math.random() * 20;
+  this.$node.prepend('<img class="dancerHead" src=/images/chris.png />');
 };
 
 WigglyDancer.prototype = Object.create(Dancer.prototype);

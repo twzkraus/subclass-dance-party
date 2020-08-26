@@ -22,8 +22,8 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:50px solid red;
-  border-radius:10px;
+  /* border:10px solid red; */
+  /* border-radius:10px; */
   position:absolute;
 }
 img {
@@ -31,14 +31,20 @@ img {
   height: 50%;
 }
 .blinkyDancer{
-  border-color: blue;
+  /* border-color: blue; */
 }
 .bouncyDancer {
-  border-color: yellow;
+  /* border-color: yellow; */
 }
 .wigglyDancer {
-  border-color: green;
+  /* border-color: green; */
 }
 .sociallyDistantDancer {
-  border-color: black;
+  /* border-color: black; */
+}
+.dancerBody {
+  width: 100px;
+}
+.dancerHead {
+  width: 100px;
 }
