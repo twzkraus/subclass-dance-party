@@ -30,18 +30,6 @@ img {
   width: 50%;
   height: 50%;
 }
-.blinkyDancer{
-  /* border-color: blue; */
-}
-.bouncyDancer {
-  /* border-color: yellow; */
-}
-.wigglyDancer {
-  /* border-color: green; */
-}
-.sociallyDistantDancer {
-  /* border-color: black; */
-}
 .dancerBody {
   width: 100px;
 }

@@ -8,14 +8,15 @@ var BouncyDancer = function(top, left, timeBetweenSteps) {
   this.isUp = false;
   this.increment = Math.random() * 20;
 
+  this.$node.prepend('<img class="dancerHead" src=/images/cody.jpg />');
+
   $('.bouncyDancer').mouseover(function() {
-    $('.bouncyDancer').css('border-width', '30px');
+    $('.bouncyDancer').css('width', '30px');
   });
 
   $('.bouncyDancer').mouseout(function() {
-    $('.bouncyDancer').css('border-width', '50px');
+    $('.bouncyDancer').css('width', '50px');
   });
-  this.$node.prepend('<img class="dancerHead" src=/images/cody.jpg />');
 };
 
 BouncyDancer.prototype = Object.create(Dancer.prototype);

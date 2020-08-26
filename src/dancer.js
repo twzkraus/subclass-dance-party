@@ -16,6 +16,16 @@ var Dancer = function(top, left, timeBetweenSteps) {
   let isStatic = thisProtoProp !== BouncyDancer.prototype && thisProtoProp !== WigglyDancer.prototype && thisProtoProp !== BlinkyDancer.prototype && thisProtoProp !== SociallyDistantDancer.prototype;
   if (isStatic) {
     this.$node.prepend('<img class="dancerHead" src=/images/quinn.jpg />');
+    this.$node.addClass('staticDancer');
+    $('.staticDancer').mouseover(function() {
+      $('.dancerHead').css('width', '200px');
+      $('.dancerBody').css('width', '200px');
+    });
+
+    $('.staticDancer').mouseout(function() {
+      $('.dancerHead').css('width', '100px');
+      $('.dancerBody').css('width', '100px');
+    });
   }
 
   // now that we have defined the dancer object, we can start setting up important parts of it by calling the methods we wrote
